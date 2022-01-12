@@ -1,0 +1,25 @@
+<section>
+    <section class="tc pb3 w-100" style="height:50px">
+        <span id="message" class="dib pv2"><%= message %></span>
+        <% if playAgain %>
+            <button class="dib ml2 wh-bg-green bn b pv2 ph3" onclick="newGame()">Play Again</button>
+        <% end %>
+    </section>
+    <table class="bg-white shadow-1">
+        <tr>
+            <td onclick="play(1)" class="bb br"><%= display[0] %></td>
+            <td onclick="play(2)" class="bb br"><%= display[1] %></td>
+            <td onclick="play(3)" class="bb"><%= display[2] %></td>
+        </tr>
+        <tr>
+            <td onclick="play(4)" class="bb br"><%= display[3] %></td>
+            <td onclick="play(5)" class="bb br"><%= display[4] %></td>
+            <td onclick="play(6)" class="bb"><%= display[5] %></td>
+        </tr>
+        <tr>
+            <td onclick="play(7)" class="br"><%= display[6] %></td>
+            <td onclick="play(8)" class="br"><%= display[7] %></td>
+            <td onclick="play(9)" ><%= display[8] %></td>
+        </tr>
+    </table>
+</section>
